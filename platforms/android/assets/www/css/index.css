@@ -1,0 +1,53 @@
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.ui-header {
+    background-color: #fff !important;
+}
+
+.ui-footer {
+    background-color: #fff !important;
+}
+
+.logo {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.menu-bg {
+    background-color: #000 !important;
+}
+
+#linkColor {
+    color: #0860c0;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.menu-bg ul li a {
+    background-color: #0860c0 !important;
+}
+
+.block {
+    text-align: center;
+}
+
+hr {
+    background-color: #0860c0;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    color: #0860c0;
+}
