@@ -3,18 +3,20 @@
 <html>
 	<head>
 		<!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"-->
-                <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' https://gestion-assurances.com">
+                <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' https://maps.googleapis.com; frame-src 'self' https://gestion-assurances.com https://maps.googleapis.com"-->
 		<meta charset="utf-8" />
 		<meta name="format-detection" content="telephone=no">
-		<meta name="msapplication-tap-highlight" content="no">
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<!--meta name="msapplication-tap-highlight" content="no"-->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, height=device-height">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="lib/jquery.mobile/css/jquery.mobile-1.4.5.min.css">
 		<script type="text/javascript" src="lib/jquery.mobile/js/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/jquery.mobile/js/jquery.mobile-1.4.5.min.js"></script>
+                <style>
+    </style>
 		<title>Assurance cyclo scooter</title>
 	</head>
-	<body>
+        <body onload="initMap()">
 		<div data-role="page" id="panel-fixed-page1" data-title="Panel fixed positioning" data-url="panel-fixed-page1">
 			<div data-role="header" data-position="fixed">
 				<h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
@@ -369,15 +371,17 @@
             </div><!-- /header -->
 
             <div role="main" class="ui-content jqm-content jqm-fullwidth">
-				<h1>Contactez nous</h1>
+				
+                                <h1>Contactez nous</h1>
 				<h2>Assurance en Direct</h2>
 				
 				<p>Adresse : 2 Rue du Loup, 31620 FRONTON</p>
 				<p>Tél : 05 82 95 21 59</p>
-				<p>Email : contact@assuranceendirect.com</p>
-
-				<p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
-            </div><!-- /content -->
+				<p>Email : contact@assuranceendirect.com</p>                            
+                                <p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
+                                <div id="map" style="width:20%; height:250px"></div>
+            
+            </div><!-- /content -->
 
             <div data-role="footer" data-position="fixed">
                 <div class="ui-grid-c">
@@ -424,7 +428,7 @@
             </div><!-- /panel -->
         </div>
             
-        <div data-role="page" id="panel-fixed-page6" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
+        <div data-role="page" id="panel-fixed-page6" data-title="Panel fixed positioning" data-url="panel-fixed-page6">
             <div data-role="header" data-position="fixed">
                 <h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
                 <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
@@ -482,5 +486,17 @@
 		<script type="text/javascript" src="js/cordova.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/cordova_plugins.js"></script>
+                <script>
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 	</body>
 </html>
