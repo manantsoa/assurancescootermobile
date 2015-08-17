@@ -16,7 +16,7 @@
     </style>
 		<title>Assurance cyclo scooter</title>
 	</head>
-        <body onload="initMap()">
+        <body>
 		<div data-role="page" id="panel-fixed-page1" data-title="Panel fixed positioning" data-url="panel-fixed-page1">
 			<div data-role="header" data-position="fixed">
 				<h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
@@ -379,7 +379,7 @@
 				<p>Tél : 05 82 95 21 59</p>
 				<p>Email : contact@assuranceendirect.com</p>                            
                                 <p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
-                                <div id="map" style="width:20%; height:250px"></div>
+                                <div id="map" style="width:20em; height:20em"></div>
             
             </div><!-- /content -->
 
@@ -486,17 +486,34 @@
 		<script type="text/javascript" src="js/cordova.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/cordova_plugins.js"></script>
-                <script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script>
 
 var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
+    
+    var myLatLng = {lat: 43.841254, lng: 1.389143};  
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 16
   });
+  
+    var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Assurance en Direct'
+  });
+
 }
 
+jQuery(document).ready(function($) {
+
+      // click on #btn_map and open the page with the map 
+      $(document).one("click", '#panel-fixed-page5', function(e) {
+          initMap();
+      });
+  });
+
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 	</body>
 </html>
