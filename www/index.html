@@ -506,13 +506,11 @@ function initMap() {
 
 }
 
-jQuery(document).ready(function($) {
-
-      // click on #btn_map and open the page with the map 
-      $(document).one("click", '#panel-fixed-page5', function(e) {
-          initMap();
-      });
-  });
+ $(document).ready(function () {
+  $("#panel-fixed-page5").show(function () {
+    initMap();
+  })
+});
 
     </script>
 	</body>
