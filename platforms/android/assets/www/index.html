@@ -2,18 +2,21 @@
 
 <html>
 	<head>
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+		<!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"-->
+                <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' https://maps.googleapis.com; frame-src 'self' https://gestion-assurances.com https://maps.googleapis.com"-->
 		<meta charset="utf-8" />
 		<meta name="format-detection" content="telephone=no">
-		<meta name="msapplication-tap-highlight" content="no">
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<!--meta name="msapplication-tap-highlight" content="no"-->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, height=device-height">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="lib/jquery.mobile/css/jquery.mobile-1.4.5.min.css">
 		<script type="text/javascript" src="lib/jquery.mobile/js/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/jquery.mobile/js/jquery.mobile-1.4.5.min.js"></script>
+                <style>
+    </style>
 		<title>Assurance cyclo scooter</title>
 	</head>
-	<body>
+        <body>
 		<div data-role="page" id="panel-fixed-page1" data-title="Panel fixed positioning" data-url="panel-fixed-page1">
 			<div data-role="header" data-position="fixed">
 				<h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
@@ -21,22 +24,23 @@
 			</div><!-- /header -->
 			<div role="main" class="ui-content jqm-content jqm-fullwidth">
 				<h1>Votre Assurance Scooter ou Moto au meilleur Prix</h1>
-				<p>Notre application vous permet d'obtenir un devis et d'assurer à bas prix en quelques clics votre 2 roues : Scooter 50 cc scooter 125 et moto pour toutes les cylindrées.</p>
-				<p>Pour plus d'informations, consultez notre site internet : <a href="http://www.assurance-cyclo-scooter.com/">Assurance Cyclo Scooter</a>.</p>
-
-				<hr />
+				<p>Obtenez un devis en cliquant ci-dessous et assurez vous à bas prix en quelques minutes : Scooter 50 cc scooter 125 et moto pour toutes les cylindrées.</p>
+                                <div class="ui-grid-solo ui-responsive block">
+                                    <a href="#panel-fixed-page2" title="Prix Devis assurance scooter 50 et moto pas cher"><img src="./img/devis-assurance-scooter-moto.png" alt="Prix Devis Souscription assurance scooter 50 et moto en ligne"></a>
+				</div>
+                                <hr />
 				<div class="ui-grid-b ui-responsive block">
 					<div class="ui-block-a">
 							<div class="ui-grid-a ui-responsive block">
-								<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/paiement-securise4.png" alt=""></div></div>
-								<div class="ui-block-b"><div class="ui-body ui-body-d"><img src="img/logo_paiement_paybox.jpg" alt=""></div></div>
+								<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/paiement-securise4.png" alt="">
+								<img src="img/logo_paiement_paybox.jpg" alt=""></div></div>
 							</div><!-- /grid-a -->
 					</div>
 					<div class="ui-block-b">
 						<div class="ui-body ui-body-d">
 							<div class="ui-grid-a ui-responsive block">
-									<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/reprenez.png" alt=""></div></div>
-									<div class="ui-block-b"><div class="ui-body ui-body-d"><a href="#panel-fixed-page4"><img src="img/espacepersogdbleufonce.png" alt=""></a></div></div>
+									<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/reprenez.png" alt="">
+									<a href="#panel-fixed-page4"><img src="img/espacepersogdbleufonce.png" alt=""></a></div></div>
 							</div><!-- /grid-a -->
 						</div>
 					</div>
@@ -44,8 +48,8 @@
 						<div class="ui-body ui-body-d">
 							<div class="ui-body ui-body-d">
 							<div class="ui-grid-a ui-responsive block">
-									<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/partenaires2.png" alt=""></div></div>
-									<div class="ui-block-b"><div class="ui-body ui-body-d"><div id="Fondu7img" class="shadow">
+									<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/partenaires2.png" alt="">
+                                                                        <div id="Fondu7img" class="shadow">
                                                                             <img src="./img/arisa-assurance-direct.jpg" title="Arisa assurance" alt="logo Arisa assurance"/>
                                                                             <img src="./img/thelem-assurance-direct.jpg" title="Thelem assurance" alt="logo Thelem assurance"/>
                                                                             <img src="./img/sada-assurance-direct.jpg" title="Sada assurance" alt="logo Sada assurance"/>
@@ -74,8 +78,6 @@
 								<div class="ui-body ui-body-d">
 									<img src="img/assurance-scooter-kymco-super-8-index.jpg" alt="">
 								</div>
-							</div>
-							<div class="ui-block-b">
 								<div class="ui-body ui-body-d">
 									<h2>Assurance scooter 50 agility super 8</h2>
 									<p>Le scooter kymco super 8 est un nouveau modèle destiné aux jeunes avec des roues de 12 pouces...</p>
@@ -91,8 +93,6 @@
 									<div class="ui-body ui-body-d">
 										<img src="img/assurance-scooter-mbk-nito-index.jpg" alt="">
 									</div>
-								</div>
-								<div class="ui-block-b">
 									<div class="ui-body ui-body-d">
 										<h2>Assurance scooter 50 mbk nitro</h2>
 										<p>Le scooter nitro est équipé de pneus large pour un meilleur accrochage et d’une selle biplace avec une position sportive...</p>
@@ -110,8 +110,6 @@
 										<div class="ui-body ui-body-d">
 											<img src="img/assurance-scooter-mbk-nito-naked-index.jpg" alt="">
 										</div>
-									</div>
-									<div class="ui-block-b">
 										<div class="ui-body ui-body-d">
 											<h2>Assurance scooter 50 mbk nitro naked</h2>
 											<p>Le nitro naked est un scooter de 50 cc avec un moteur à système de refroidissement par liquide avec des feux en arrière...</p>
@@ -130,11 +128,9 @@
 										<div class="ui-body ui-body-d">
 											<img src="img/assurance-scooter-mbk-stunt-naked-index.jpg" alt="">
 										</div>
-									</div>
-									<div class="ui-block-b">
 										<div class="ui-body ui-body-d">
 											<h2>Assurance scooter 50 mbk stunt</h2>
-											<p>Le mbk naked est un scooter équipé d’un guidon VTT avec un moteur refroidit par air...</p>
+											<p>Le mbk naked est un scooter équipé d’un guidon VTT avec un moteur refroidi par air...</p>
 											<p>Comment souscrire à une assurance scooter mbk stunt</p> 
 										</div>
 									</div>
@@ -199,11 +195,8 @@
 
 			<div role="main" class="ui-content jqm-content jqm-fullwidth">
 				<h1>Devis Assurance Scooter Moto Cyclomoteur</h1>
-				<p>Assurance scooter pas cher en ligne 50 cc et moto Souscription et édition carte verte en ligne - Prix Assurance scooter pas cher à partir de 14 € par mois Cyclomoteur 50 cm3 50cc 50 cc et moto toutes cylindrées</p>
-				<p id="linkColor"><a href="http://www.assurance-cyclo-scooter.com/assurance-scooter-moto-pas-cher.html" rel="external">Devis Assurance Scooter Moto pas cher</a></p>
-				<p>Tarif prix pas cher assurance scooter 50 cc à partir de 14 € par mois</p>
-				<p>Assurance scooter 50 cc pas cher 50cc en ligne Assurance en Direct</p>
-			   
+				<p>Réalisez votre devis en quelques minutes ci-dessous</p>
+				<iframe src="https://gestion-assurances.com/site_partenaire.aspx?code=OPE12234&dst=32" width=100% height=1200 frameborder=0 id="loadframe"></iframe>   
 			</div><!-- /content -->
 
 			<div data-role="footer" data-position="fixed">
@@ -326,7 +319,6 @@
 				<p>Vous pouvez vous connecter sur votre espace personnel ci-dessous :</p>
 				<iframe src="https://gestion-assurances.com/clients/pages/spc_connexion_client.aspx?domaine=assuranceendirect.com" rel="nofollow" width=100% height=1200 scrolling="auto" frameborder=0 id="loadframe"></iframe>
             </div><!-- /content -->
-
             <div data-role="footer" data-position="fixed">
                 <div class="ui-grid-c">
                     <div class="ui-block-a">
@@ -379,15 +371,17 @@
             </div><!-- /header -->
 
             <div role="main" class="ui-content jqm-content jqm-fullwidth">
-				<h1>Contactez nous</h1>
+				
+                                <h1>Contactez nous</h1>
 				<h2>Assurance en Direct</h2>
 				
 				<p>Adresse : 2 Rue du Loup, 31620 FRONTON</p>
 				<p>Tél : 05 82 95 21 59</p>
-				<p>Email : contact@assuranceendirect.com</p>
-
-				<p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
-            </div><!-- /content -->
+				<p>Email : contact@assuranceendirect.com</p>                            
+                                <p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
+                                <div id="map" style="width:20em; height:20em"></div>
+            
+            </div><!-- /content -->
 
             <div data-role="footer" data-position="fixed">
                 <div class="ui-grid-c">
@@ -434,7 +428,7 @@
             </div><!-- /panel -->
         </div>
             
-        <div data-role="page" id="panel-fixed-page6" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
+        <div data-role="page" id="panel-fixed-page6" data-title="Panel fixed positioning" data-url="panel-fixed-page6">
             <div data-role="header" data-position="fixed">
                 <h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
                 <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
@@ -492,5 +486,34 @@
 		<script type="text/javascript" src="js/cordova.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/cordova_plugins.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script>
+
+var map;
+function initMap() {
+    
+    var myLatLng = {lat: 43.841254, lng: 1.389143};  
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 16
+  });
+  
+    var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Assurance en Direct'
+  });
+
+}
+
+jQuery(document).ready(function($) {
+
+      // click on #btn_map and open the page with the map 
+      $(document).one("click", '#panel-fixed-page5', function(e) {
+          initMap();
+      });
+  });
+
+    </script>
 	</body>
 </html>

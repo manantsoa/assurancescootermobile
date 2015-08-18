@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.adobe.assurance" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.adobe.assurance" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="File">
         <param name="android-package" value="org.apache.cordova.file.FileUtils" />
@@ -11,15 +11,24 @@
     <feature name="Compass">
         <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
     </feature>
+    <splash density="land-hdpi" src="www/img/assurance-en-direct-HDPI-land.png" />
+    <splash density="land-ldpi" src="www/img/assurance-en-direct-LDPI-land.png" />
+    <splash density="land-mdpi" src="www/img/assurance-en-direct-MDPI-land.png" />
+    <splash density="land-xhdpi" src="www/img/assurance-en-direct-XHDPI-land.png" />
+    <splash density="port-hdpi" src="www/img/assurance-en-direct-HDPI-portrait.png" />
+    <splash density="port-ldpi" src="www/img/assurance-en-direct-LDPI-portrait.png" />
+    <splash density="port-mdpi" src="www/img/assurance-en-direct-MDPI-portrait.png" />
+    <splash density="port-xhdpi" src="www/img/assurance-en-direct-XHDPI-portrait.png" />
     <allow-intent href="market:*" />
     <name>AssuranceScooter</name>
     <description>
-        An application which provide scooter insurance
+        An application which provides scooter insurance
     </description>
-    <author email="contact@assuranceendirect.com" href="http://cordova.io">
+    <author email="contact@assuranceendirect.com" href="http://www.assurance-cyclo-scooter.com/">
         Assurance en Direct Team
     </author>
-    <icon src="img/logoAssuranceDirectMobile.png" />
+    <icon src="www/img/logoAssuranceScooterMobile.png" />
+    <splash src="www/img/yamaha-xmax-assurance-scooter-en-ligne.png" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
