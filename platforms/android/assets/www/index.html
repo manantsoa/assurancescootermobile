@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"-->
-                <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' https://maps.googleapis.com; frame-src 'self' https://gestion-assurances.com https://maps.googleapis.com"-->
+                <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://maps.googleapis.com; frame-src 'self' https://gestion-assurances.com https://maps.googleapis.com">
 		<meta charset="utf-8" />
 		<meta name="format-detection" content="telephone=no">
 		<!--meta name="msapplication-tap-highlight" content="no"-->
@@ -32,8 +32,8 @@
 				<div class="ui-grid-b ui-responsive block">
 					<div class="ui-block-a">
 							<div class="ui-grid-a ui-responsive block">
-								<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/paiement-securise4.png" alt="">
-								<img src="img/logo_paiement_paybox.jpg" alt=""></div></div>
+                                                            <div class="ui-block-a"><img src="img/paiement-securise4.png" alt=""></div>
+                                                            <div class="ui-block-b"><img src="img/logo_paiement_paybox.jpg" alt=""></div>
 							</div><!-- /grid-a -->
 					</div>
 					<div class="ui-block-b">
@@ -296,15 +296,15 @@
             </div><!-- /footer -->
    
             <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="menu-bg">
-                <ul data-role="listview">
-                    <li><a href="#panel-fixed-page1">Accueil</a></li>
-                    <li><a href="#panel-fixed-page2">Devis</a></li>
-                    <li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
-                    <li><a href="#panel-fixed-page4">Espace Personnel</a></li>                 
-                    <li><a href="#panel-fixed-page5">Contactez nous</a></li>
-                    <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
-                </ul>
-            </div><!-- /panel -->
+				<ul data-role="listview">
+					<li><a href="#panel-fixed-page1">Accueil</a></li>
+					<li><a href="#panel-fixed-page2">Devis</a></li>
+					<li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
+					<li><a href="#panel-fixed-page4">Espace Personnel</a></li>		
+					<li><a href="#panel-fixed-page5">Contactez nous</a></li>
+                                        <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
+				</ul>
+			</div><!-- /panel -->
         </div>
 
         <div data-role="page" id="panel-fixed-page4" data-title="Panel fixed positioning" data-url="panel-fixed-page4">
@@ -353,18 +353,18 @@
             </div><!-- /footer -->
    
             <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="menu-bg">
-                <ul data-role="listview">
-                    <li><a href="#panel-fixed-page1">Accueil</a></li>
-                    <li><a href="#panel-fixed-page2">Devis</a></li>
-                    <li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
-                    <li><a href="#panel-fixed-page4">Espace Personnel</a></li>                 
-                    <li><a href="#panel-fixed-page5">Contactez nous</a></li>
-                    <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
-                </ul>
-            </div><!-- /panel -->
+				<ul data-role="listview">
+					<li><a href="#panel-fixed-page1">Accueil</a></li>
+					<li><a href="#panel-fixed-page2">Devis</a></li>
+					<li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
+					<li><a href="#panel-fixed-page4">Espace Personnel</a></li>		
+					<li><a href="#panel-fixed-page5">Contactez nous</a></li>
+                                        <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
+				</ul>
+			</div><!-- /panel -->
         </div>
 
-        <div data-role="page" id="panel-fixed-page5" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
+            <div data-role="page" id="panel-fixed-page5" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
             <div data-role="header" data-position="fixed">
                 <h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
                 <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
@@ -379,7 +379,12 @@
 				<p>Tél : 05 82 95 21 59</p>
 				<p>Email : contact@assuranceendirect.com</p>                            
                                 <p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
-                                <div id="map" style="width:20em; height:20em"></div>
+                                <div id="map_canvas" onclick="initMap()">
+                                    <div data-role="collapsible" data-theme="d" data-content-theme="d" id="map_block">
+                                        <h3>Afficher sur la map</h3>
+                                        <div id="map" style="width:20em; height:20em"></div>
+                                    </div>
+                                </div>
             
             </div><!-- /content -->
 
@@ -417,15 +422,15 @@
             </div><!-- /footer -->
    
             <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="menu-bg">
-                <ul data-role="listview">
-                    <li><a href="#panel-fixed-page1">Accueil</a></li>
-                    <li><a href="#panel-fixed-page2">Devis</a></li>
-                    <li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
-                    <li><a href="#panel-fixed-page4">Espace Personnel</a></li>                 
-                    <li><a href="#panel-fixed-page5">Contactez nous</a></li>
-                    <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
-                </ul>
-            </div><!-- /panel -->
+				<ul data-role="listview">
+					<li><a href="#panel-fixed-page1">Accueil</a></li>
+					<li><a href="#panel-fixed-page2">Devis</a></li>
+					<li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
+					<li><a href="#panel-fixed-page4">Espace Personnel</a></li>		
+					<li><a href="#panel-fixed-page5">Contactez nous</a></li>
+                                        <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
+				</ul>
+			</div><!-- /panel -->
         </div>
             
         <div data-role="page" id="panel-fixed-page6" data-title="Panel fixed positioning" data-url="panel-fixed-page6">
@@ -473,15 +478,15 @@
             </div><!-- /footer -->
    
             <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="menu-bg">
-                <ul data-role="listview">
-                    <li><a href="#panel-fixed-page1">Accueil</a></li>
-                    <li><a href="#panel-fixed-page2">Devis</a></li>
-                    <li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
-                    <li><a href="#panel-fixed-page4">Espace Personnel</a></li>                 
-                    <li><a href="#panel-fixed-page5">Contactez nous</a></li>
-                    <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
-                </ul>
-            </div><!-- /panel -->
+				<ul data-role="listview">
+					<li><a href="#panel-fixed-page1">Accueil</a></li>
+					<li><a href="#panel-fixed-page2">Devis</a></li>
+					<li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
+					<li><a href="#panel-fixed-page4">Espace Personnel</a></li>		
+					<li><a href="#panel-fixed-page5">Contactez nous</a></li>
+                                        <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
+				</ul>
+			</div><!-- /panel -->
         </div>    
 		<script type="text/javascript" src="js/cordova.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
@@ -495,7 +500,7 @@ function initMap() {
     var myLatLng = {lat: 43.841254, lng: 1.389143};  
     map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
-    zoom: 16
+    zoom: 17
   });
   
     var marker = new google.maps.Marker({
@@ -505,15 +510,6 @@ function initMap() {
   });
 
 }
-
-jQuery(document).ready(function($) {
-
-      // click on #btn_map and open the page with the map 
-      $(document).one("click", '#panel-fixed-page5', function(e) {
-          initMap();
-      });
-  });
-
     </script>
 	</body>
 </html>
