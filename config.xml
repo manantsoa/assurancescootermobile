@@ -9,6 +9,7 @@
     </author>
 	<icon src="www/img/logoAssuranceScooterMobile.png"/>
 	<preference name="SplashScreen" value="screen"/>
+	<preference name="SplashScreenDelay" value="3000"/>
 	<platform name="android">
     <!-- you can use any density that exists in the Android project -->
 		<splash density="land-hdpi" src="www/img/assurance-cyclo-scooter-hdpi-land.png"/>
