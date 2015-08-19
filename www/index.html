@@ -364,12 +364,10 @@
 				<p>Tél : 05 82 95 21 59</p>
 				<p>Email : contact@assuranceendirect.com</p>                            
                                 <p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
-                                <div id="map_canvas" onclick="initMap()">
                                     <div data-role="collapsible" data-theme="d" data-content-theme="d" id="map_block">
                                         <h3>Afficher sur la map</h3>
                                         <div id="map" style="width:20em; height:20em"></div>
                                     </div>
-                                </div>
             
             </div><!-- /content -->
 
@@ -496,6 +494,13 @@ function initMap() {
   });
 
 }
+
+$(document).on("pagecreate", function () {
+    $('#map_block').on('collapsibleexpand', function () {
+        initMap();
+    });
+});
+        
     </script>
 	</body>
 </html>
