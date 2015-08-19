@@ -3,18 +3,21 @@
 <html>
 	<head>
 		<!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"-->
-                <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' https://gestion-assurances.com">
+                <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://maps.googleapis.com; frame-src 'self' https://gestion-assurances.com https://maps.googleapis.com">
 		<meta charset="utf-8" />
 		<meta name="format-detection" content="telephone=no">
-		<meta name="msapplication-tap-highlight" content="no">
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<!--meta name="msapplication-tap-highlight" content="no"-->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, height=device-height">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="lib/jquery.mobile/css/jquery.mobile-1.4.5.min.css">
+                <link rel="stylesheet" href="lib/jquery.mobile/css/flickity.min.css">
 		<script type="text/javascript" src="lib/jquery.mobile/js/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/jquery.mobile/js/jquery.mobile-1.4.5.min.js"></script>
+                <style>
+    </style>
 		<title>Assurance cyclo scooter</title>
 	</head>
-	<body>
+        <body>
 		<div data-role="page" id="panel-fixed-page1" data-title="Panel fixed positioning" data-url="panel-fixed-page1">
 			<div data-role="header" data-position="fixed">
 				<h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
@@ -29,37 +32,44 @@
                                 <hr />
 				<div class="ui-grid-b ui-responsive block">
 					<div class="ui-block-a">
-							<div class="ui-grid-a ui-responsive block">
-								<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/paiement-securise4.png" alt="">
-								<img src="img/logo_paiement_paybox.jpg" alt=""></div></div>
+							<div class="ui-grid-solo ui-responsive block">
+                                                            <div class="ui-block-a"><img src="img/paiement-securise4.png" alt=""></div>
+                                                            <div class="ui-block-a"><img src="img/logo_paiement_paybox.jpg" alt=""></div>
 							</div><!-- /grid-a -->
 					</div>
 					<div class="ui-block-b">
 						<div class="ui-body ui-body-d">
-							<div class="ui-grid-a ui-responsive block">
-									<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/reprenez.png" alt="">
-									<a href="#panel-fixed-page4"><img src="img/espacepersogdbleufonce.png" alt=""></a></div></div>
-							</div><!-- /grid-a -->
-						</div>
-					</div>
+							<div class="ui-grid-solo ui-responsive block">
+                                                            <div class="ui-block-a"><img src="img/reprenez.png" alt=""></div>
+                                                            <div class="ui-block-a"><a href="#panel-fixed-page4"><img src="img/espacepersogdbleufonce.png" alt=""></a></div>
+                                                        </div>
+                                                </div><!-- /grid-a -->
+                                        </div>
+					
 					<div class="ui-block-c">
-						<div class="ui-body ui-body-d">
-							<div class="ui-body ui-body-d">
-							<div class="ui-grid-a ui-responsive block">
-									<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/partenaires2.png" alt="">
-                                                                        <div id="Fondu7img" class="shadow">
-                                                                            <img src="./img/arisa-assurance-direct.jpg" title="Arisa assurance" alt="logo Arisa assurance"/>
-                                                                            <img src="./img/thelem-assurance-direct.jpg" title="Thelem assurance" alt="logo Thelem assurance"/>
-                                                                            <img src="./img/sada-assurance-direct.jpg" title="Sada assurance" alt="logo Sada assurance"/>
-                                                                            <img src="./img/europ-assurance-direct.jpg" title="Europ assurance" alt="logo Europ assistance assurance"/>
-                                                                            <img src="./img/equite-assurance-direct.jpg" title="Equite assurance" alt="logo Equite assurance"/>
-                                                                            <img src="./img/axa-assurance-direct.jpg" title="Axa assurance" alt="logo Axa assurance"/>
-                                                                            <img src="./img/allianz-assurance-direct.jpg" title="Assureurs partenaires" alt="Assureurs partenaires"/>
-                                                                        </div>
-    </div></div>
-							</div><!-- /grid-a -->
-						</div>
-						</div>
+                                                <div class="ui-grid-solo ui-responsive block">
+                                                                <div class="ui-block-a"><img src="img/partenaires2.png" alt=""></div>
+                                                                <div class="ui-block-a">
+                                                                    <!--div id="Fondu7img">
+                                                                        <img src="./img/arisa-assurance-direct.jpg" title="Arisa assurance" alt="logo Arisa assurance"/>
+                                                                        <img src="./img/thelem-assurance-direct.jpg" title="Thelem assurance" alt="logo Thelem assurance"/>
+                                                                        <img src="./img/sada-assurance-direct.jpg" title="Sada assurance" alt="logo Sada assurance"/>
+                                                                        <img src="./img/europ-assurance-direct.jpg" title="Europ assurance" alt="logo Europ assistance assurance"/>
+                                                                        <img src="./img/equite-assurance-direct.jpg" title="Equite assurance" alt="logo Equite assurance"/>
+                                                                        <img src="./img/axa-assurance-direct.jpg" title="Axa assurance" alt="logo Axa assurance"/>
+                                                                        <img src="./img/allianz-assurance-direct.jpg" title="Assureurs partenaires" alt="Assureurs partenaires"/>
+                                                                    </div-->
+                                                                    <div class="gallery js-flickity" data-flickity-options='{"autoPlay": 1500, "prevNextButtons": false, "wrapAround": true}'>
+                                                                        <div class="gallery-cell"><img src="./img/arisa-assurance-direct.jpg" title="Arisa assurance" alt="logo Arisa assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/thelem-assurance-direct.jpg" title="Thelem assurance" alt="logo Thelem assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/sada-assurance-direct.jpg" title="Sada assurance" alt="logo Sada assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/europ-assurance-direct.jpg" title="Europ assurance" alt="logo Europ assistance assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/equite-assurance-direct.jpg" title="Equite assurance" alt="logo Equite assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/axa-assurance-direct.jpg" title="Axa assurance" alt="logo Axa assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/allianz-assurance-direct.jpg" title="Assureurs partenaires" alt="Assureurs partenaires"/></div>
+                                                                    </div>
+                                                                </div>          
+                                                </div><!-- /grid-a -->
 					</div>
 				</div><!-- /grid-b -->
 				
@@ -71,70 +81,52 @@
 				<hr />
 				<div class="ui-grid-c ui-responsive block">
 					<div class="ui-block-a">
-						<div class="ui-grid-a ui-responsive block">
-							<div class="ui-block-a">
-								<div class="ui-body ui-body-d">
-									<img src="img/assurance-scooter-kymco-super-8-index.jpg" alt="">
-								</div>
-								<div class="ui-body ui-body-d">
-									<h2>Assurance scooter 50 agility super 8</h2>
-									<p>Le scooter kymco super 8 est un nouveau modèle destiné aux jeunes avec des roues de 12 pouces...</p>
-									<p>Devis tarif pour une assurance scooter 50 cc kymco super 8</p>
-								</div>
-							</div>
+						<div class="ui-grid-solo ui-responsive block">                                                                
+                                                    <div class="ui-block-a"><img src="img/assurance-scooter-kymco-super-8-index.jpg" alt=""></div>
+                                                    <div class="ui-block-a">
+                                                        <div class="ui-body ui-body-d">
+                                                            <h2>Assurance scooter 50 agility super 8</h2>
+                                                            <p>Le scooter kymco super 8 est un nouveau modèle destiné aux jeunes avec des roues de 12 pouces...</p>
+                                                            <p>Devis tarif pour une assurance scooter 50 cc kymco super 8</p>
+                                                        </div>
+                                                    </div>
 						</div><!-- /grid-a -->
 					</div>
 					<div class="ui-block-b">
-						<div class="ui-body ui-body-d">
-							<div class="ui-grid-a ui-responsive block">
-								<div class="ui-block-a">
-									<div class="ui-body ui-body-d">
-										<img src="img/assurance-scooter-mbk-nito-index.jpg" alt="">
-									</div>
-									<div class="ui-body ui-body-d">
-										<h2>Assurance scooter 50 mbk nitro</h2>
-										<p>Le scooter nitro est équipé de pneus large pour un meilleur accrochage et d’une selle biplace avec une position sportive...</p>
-										<p>Vous souhaitez assurer un scooter 50 à bas prix mbk nitro ?</p>
-									</div>
-								</div>
+							<div class="ui-grid-solo ui-responsive block">
+                                                            <div class="ui-block-a"><img src="img/assurance-scooter-mbk-nito-index.jpg" alt=""></div>
+                                                            <div class="ui-block-a">
+                                                                <div class="ui-body ui-body-d">
+                                                                        <h2>Assurance scooter 50 mbk nitro</h2>
+                                                                        <p>Le scooter nitro est équipé de pneus large pour un meilleur accrochage et d’une selle biplace avec une position sportive...</p>
+                                                                        <p>Vous souhaitez assurer un scooter 50 à bas prix mbk nitro ?</p>
+                                                                </div>
+                                                            </div>
 							</div><!-- /grid-a -->
-						</div>
 					</div>
 					<div class="ui-block-c">
-						<div class="ui-body ui-body-d">
-							<div class="ui-body ui-body-d">
-								<div class="ui-grid-a ui-responsive block">
-									<div class="ui-block-a">
-										<div class="ui-body ui-body-d">
-											<img src="img/assurance-scooter-mbk-nito-naked-index.jpg" alt="">
-										</div>
-										<div class="ui-body ui-body-d">
-											<h2>Assurance scooter 50 mbk nitro naked</h2>
-											<p>Le nitro naked est un scooter de 50 cc avec un moteur à système de refroidissement par liquide avec des feux en arrière...</p>
-											<p>Assurance scooter pas cher 50 cc pour mbk nitro naked peu onéreuse</p>
-										</div>
-									</div>
-								</div><!-- /grid-a -->
-							</div>
-						</div>
+                                                        <div class="ui-grid-solo ui-responsive block">                                                                        
+                                                                    <div class="ui-block-a"><img src="img/assurance-scooter-mbk-nito-naked-index.jpg" alt=""></div>
+                                                                    <div class="ui-block-a">
+                                                                        <div class="ui-body ui-body-d">
+                                                                                <h2>Assurance scooter 50 mbk nitro naked</h2>
+                                                                                <p>Le nitro naked est un scooter de 50 cc avec un moteur à système de refroidissement par liquide avec des feux en arrière...</p>
+                                                                                <p>Assurance scooter pas cher 50 cc pour mbk nitro naked peu onéreuse</p>
+                                                                        </div>
+                                                                    </div>
+                                                        </div><!-- /grid-a -->
 					</div>
 					<div class="ui-block-d">
-						<div class="ui-body ui-body-d">
-							<div class="ui-body ui-body-d">
-								<div class="ui-grid-a ui-responsive block">
-									<div class="ui-block-a">
-										<div class="ui-body ui-body-d">
-											<img src="img/assurance-scooter-mbk-stunt-naked-index.jpg" alt="">
-										</div>
-										<div class="ui-body ui-body-d">
-											<h2>Assurance scooter 50 mbk stunt</h2>
-											<p>Le mbk naked est un scooter équipé d’un guidon VTT avec un moteur refroidi par air...</p>
-											<p>Comment souscrire à une assurance scooter mbk stunt</p> 
-										</div>
-									</div>
-								</div><!-- /grid-a -->
-							</div>
-						</div>
+                                                        <div class="ui-grid-solo ui-responsive block">
+                                                                <div class="ui-block-a"><img src="img/assurance-scooter-mbk-stunt-naked-index.jpg" alt=""></div>
+                                                                <div class="ui-block-a">
+                                                                        <div class="ui-body ui-body-d">
+                                                                                <h2>Assurance scooter 50 mbk stunt</h2>
+                                                                                <p>Le mbk naked est un scooter équipé d’un guidon VTT avec un moteur refroidi par air...</p>
+                                                                                <p>Comment souscrire à une assurance scooter mbk stunt</p> 
+                                                                        </div>
+                                                                </div>
+                                                        </div><!-- /grid-a -->
 					</div>
 				</div><!-- /grid-b -->
 			</div><!-- /content -->
@@ -294,15 +286,15 @@
             </div><!-- /footer -->
    
             <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="menu-bg">
-                <ul data-role="listview">
-                    <li><a href="#panel-fixed-page1">Accueil</a></li>
-                    <li><a href="#panel-fixed-page2">Devis</a></li>
-                    <li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
-                    <li><a href="#panel-fixed-page4">Espace Personnel</a></li>                 
-                    <li><a href="#panel-fixed-page5">Contactez nous</a></li>
-                    <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
-                </ul>
-            </div><!-- /panel -->
+				<ul data-role="listview">
+					<li><a href="#panel-fixed-page1">Accueil</a></li>
+					<li><a href="#panel-fixed-page2">Devis</a></li>
+					<li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
+					<li><a href="#panel-fixed-page4">Espace Personnel</a></li>		
+					<li><a href="#panel-fixed-page5">Contactez nous</a></li>
+                                        <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
+				</ul>
+			</div><!-- /panel -->
         </div>
 
         <div data-role="page" id="panel-fixed-page4" data-title="Panel fixed positioning" data-url="panel-fixed-page4">
@@ -351,33 +343,40 @@
             </div><!-- /footer -->
    
             <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="menu-bg">
-                <ul data-role="listview">
-                    <li><a href="#panel-fixed-page1">Accueil</a></li>
-                    <li><a href="#panel-fixed-page2">Devis</a></li>
-                    <li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
-                    <li><a href="#panel-fixed-page4">Espace Personnel</a></li>                 
-                    <li><a href="#panel-fixed-page5">Contactez nous</a></li>
-                    <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
-                </ul>
-            </div><!-- /panel -->
+				<ul data-role="listview">
+					<li><a href="#panel-fixed-page1">Accueil</a></li>
+					<li><a href="#panel-fixed-page2">Devis</a></li>
+					<li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
+					<li><a href="#panel-fixed-page4">Espace Personnel</a></li>		
+					<li><a href="#panel-fixed-page5">Contactez nous</a></li>
+                                        <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
+				</ul>
+			</div><!-- /panel -->
         </div>
 
-        <div data-role="page" id="panel-fixed-page5" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
+            <div data-role="page" id="panel-fixed-page5" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
             <div data-role="header" data-position="fixed">
                 <h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
                 <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
             </div><!-- /header -->
 
             <div role="main" class="ui-content jqm-content jqm-fullwidth">
-				<h1>Contactez nous</h1>
+				
+                                <h1>Contactez nous</h1>
 				<h2>Assurance en Direct</h2>
 				
 				<p>Adresse : 2 Rue du Loup, 31620 FRONTON</p>
 				<p>Tél : 05 82 95 21 59</p>
-				<p>Email : contact@assuranceendirect.com</p>
-
-				<p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
-            </div><!-- /content -->
+				<p>Email : contact@assuranceendirect.com</p>                            
+                                <p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
+                                <div id="map_canvas" onclick="initMap()">
+                                    <div data-role="collapsible" data-theme="d" data-content-theme="d" id="map_block">
+                                        <h3>Afficher sur la map</h3>
+                                        <div id="map" style="width:20em; height:20em"></div>
+                                    </div>
+                                </div>
+            
+            </div><!-- /content -->
 
             <div data-role="footer" data-position="fixed">
                 <div class="ui-grid-c">
@@ -413,18 +412,18 @@
             </div><!-- /footer -->
    
             <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="menu-bg">
-                <ul data-role="listview">
-                    <li><a href="#panel-fixed-page1">Accueil</a></li>
-                    <li><a href="#panel-fixed-page2">Devis</a></li>
-                    <li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
-                    <li><a href="#panel-fixed-page4">Espace Personnel</a></li>                 
-                    <li><a href="#panel-fixed-page5">Contactez nous</a></li>
-                    <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
-                </ul>
-            </div><!-- /panel -->
+				<ul data-role="listview">
+					<li><a href="#panel-fixed-page1">Accueil</a></li>
+					<li><a href="#panel-fixed-page2">Devis</a></li>
+					<li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
+					<li><a href="#panel-fixed-page4">Espace Personnel</a></li>		
+					<li><a href="#panel-fixed-page5">Contactez nous</a></li>
+                                        <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
+				</ul>
+			</div><!-- /panel -->
         </div>
             
-        <div data-role="page" id="panel-fixed-page6" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
+        <div data-role="page" id="panel-fixed-page6" data-title="Panel fixed positioning" data-url="panel-fixed-page6">
             <div data-role="header" data-position="fixed">
                 <h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
                 <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
@@ -469,18 +468,39 @@
             </div><!-- /footer -->
    
             <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel" class="menu-bg">
-                <ul data-role="listview">
-                    <li><a href="#panel-fixed-page1">Accueil</a></li>
-                    <li><a href="#panel-fixed-page2">Devis</a></li>
-                    <li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
-                    <li><a href="#panel-fixed-page4">Espace Personnel</a></li>                 
-                    <li><a href="#panel-fixed-page5">Contactez nous</a></li>
-                    <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
-                </ul>
-            </div><!-- /panel -->
+				<ul data-role="listview">
+					<li><a href="#panel-fixed-page1">Accueil</a></li>
+					<li><a href="#panel-fixed-page2">Devis</a></li>
+					<li><a href="#panel-fixed-page3">Conditions de Souscription</a></li>
+					<li><a href="#panel-fixed-page4">Espace Personnel</a></li>		
+					<li><a href="#panel-fixed-page5">Contactez nous</a></li>
+                                        <li><a href="#panel-fixed-page6">Mot de Passe Oublié ?</a></li>
+				</ul>
+			</div><!-- /panel -->
         </div>    
 		<script type="text/javascript" src="js/cordova.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/cordova_plugins.js"></script>
+                <script src="lib/jquery.mobile/js/flickity.pkgd.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script>
+
+var map;
+function initMap() {
+    
+    var myLatLng = {lat: 43.841254, lng: 1.389143};  
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 17
+  });
+  
+    var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Assurance en Direct'
+  });
+
+}
+    </script>
 	</body>
 </html>
