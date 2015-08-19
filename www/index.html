@@ -10,6 +10,7 @@
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, height=device-height">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="lib/jquery.mobile/css/jquery.mobile-1.4.5.min.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css">
 		<script type="text/javascript" src="lib/jquery.mobile/js/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/jquery.mobile/js/jquery.mobile-1.4.5.min.js"></script>
                 <style>
@@ -49,7 +50,7 @@
                                                 <div class="ui-grid-solo ui-responsive block">
                                                                 <div class="ui-block-a"><img src="img/partenaires2.png" alt=""></div>
                                                                 <div class="ui-block-a">
-                                                                    <div id="Fondu7img" class="shadow">
+                                                                    <!--div id="Fondu7img">
                                                                         <img src="./img/arisa-assurance-direct.jpg" title="Arisa assurance" alt="logo Arisa assurance"/>
                                                                         <img src="./img/thelem-assurance-direct.jpg" title="Thelem assurance" alt="logo Thelem assurance"/>
                                                                         <img src="./img/sada-assurance-direct.jpg" title="Sada assurance" alt="logo Sada assurance"/>
@@ -57,6 +58,15 @@
                                                                         <img src="./img/equite-assurance-direct.jpg" title="Equite assurance" alt="logo Equite assurance"/>
                                                                         <img src="./img/axa-assurance-direct.jpg" title="Axa assurance" alt="logo Axa assurance"/>
                                                                         <img src="./img/allianz-assurance-direct.jpg" title="Assureurs partenaires" alt="Assureurs partenaires"/>
+                                                                    </div-->
+                                                                    <div class="gallery js-flickity" data-flickity-options='{"autoPlay": 1500, "prevNextButtons": false, "wrapAround": true}'>
+                                                                        <div class="gallery-cell"><img src="./img/arisa-assurance-direct.jpg" title="Arisa assurance" alt="logo Arisa assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/thelem-assurance-direct.jpg" title="Thelem assurance" alt="logo Thelem assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/sada-assurance-direct.jpg" title="Sada assurance" alt="logo Sada assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/europ-assurance-direct.jpg" title="Europ assurance" alt="logo Europ assistance assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/equite-assurance-direct.jpg" title="Equite assurance" alt="logo Equite assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/axa-assurance-direct.jpg" title="Axa assurance" alt="logo Axa assurance"/></div>
+                                                                        <div class="gallery-cell"><img src="./img/allianz-assurance-direct.jpg" title="Assureurs partenaires" alt="Assureurs partenaires"/></div>
                                                                     </div>
                                                                 </div>          
                                                 </div><!-- /grid-a -->
@@ -471,6 +481,7 @@
 		<script type="text/javascript" src="js/cordova.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/cordova_plugins.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script>
 

@@ -7,14 +7,14 @@
     <feature name="Compass">
         <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
     </feature>
-    <splash density="land-hdpi" src="www/img/assurance-en-direct-HDPI-land.png" />
-    <splash density="land-ldpi" src="www/img/assurance-en-direct-LDPI-land.png" />
-    <splash density="land-mdpi" src="www/img/assurance-en-direct-MDPI-land.png" />
-    <splash density="land-xhdpi" src="www/img/assurance-en-direct-XHDPI-land.png" />
-    <splash density="port-hdpi" src="www/img/assurance-en-direct-HDPI-portrait.png" />
-    <splash density="port-ldpi" src="www/img/assurance-en-direct-LDPI-portrait.png" />
-    <splash density="port-mdpi" src="www/img/assurance-en-direct-MDPI-portrait.png" />
-    <splash density="port-xhdpi" src="www/img/assurance-en-direct-XHDPI-portrait.png" />
+    <splash density="land-hdpi" src="www/img/assurance-cyclo-scooter-hdpi-land.png" />
+    <splash density="land-ldpi" src="www/img/assurance-cyclo-scooter-ldpi-land.png" />
+    <splash density="land-mdpi" src="www/img/assurance-cyclo-scooter-mdpi-land.png" />
+    <splash density="land-xhdpi" src="www/img/assurance-cyclo-scooter-xhdpi-land.png" />
+    <splash density="port-hdpi" src="www/img/assurance-cyclo-scooter-hdpi-portrait.png" />
+    <splash density="port-ldpi" src="www/img/assurance-cyclo-scooter-ldpi-portrait.png" />
+    <splash density="port-mdpi" src="www/img/assurance-cyclo-scooter-mdpi-portrait" />
+    <splash density="port-xhdpi" src="www/img/assurance-cyclo-scooter-xhdpi-portrait.png" />
     <allow-intent href="market:*" />
     <name>AssuranceScooter</name>
     <description>
@@ -24,7 +24,6 @@
         Assurance en Direct Team
     </author>
     <icon src="www/img/logoAssuranceScooterMobile.png" />
-    <splash src="www/img/yamaha-xmax-assurance-scooter-en-ligne.png" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
