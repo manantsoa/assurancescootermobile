@@ -26,8 +26,8 @@
 			<div role="main" class="ui-content jqm-content jqm-fullwidth">
 				<div class="ui-grid-solo ui-responsive block">
                                     <div class="ui-block-a">
-                                        <h1>Votre Assurance Scooter ou Moto au meilleur Prix</h1><br />
-                                        Obtenez un devis en cliquant ci-dessous et assurez vous à bas prix en quelques minutes : Scooter 50 cc scooter 125 et moto pour toutes les cylindrées.<br /><br />
+                                        <h1>Votre Assurance Scooter 50 ou Moto au meilleur prix</h1><br />
+                                        Obtenez un devis en cliquant ci-dessous et assurez vous à bas prix en quelques minutes sur ces produits : Scooter 50, scooter 125, et moto toutes cylindrées.<br /><br />
                                     </div>
                                     <div class="ui-block-a">
                                         <a href="#panel-fixed-page2" title="Prix Devis assurance scooter 50 et moto pas cher"><img src="./img/devis-assurance-scooter-moto.png" alt="Prix Devis Souscription assurance scooter 50 et moto en ligne"></a><br /><br />
@@ -229,22 +229,29 @@
 			</div><!-- /panel -->
 		</div>
 
-		<div data-role="page" id="panel-fixed-page3" data-title="Panel fixed positioning" data-url="panel-fixed-page3">
+            <div data-role="page" id="panel-fixed-page3" data-title="Panel fixed positioning" data-url="panel-fixed-page3">
             <div data-role="header" data-position="fixed">
                 <h1 class="logo"><img src="img/logo-assurance.jpg" alt=""></h1>
                 <a href="#panel-page-3" data-icon="bars" data-iconpos="notext">Menu</a>
             </div><!-- /header -->
 
-            <div role="main" class="ui-content jqm-content jqm-fullwidth">
-                <h1>Conditions d'acceptation pour souscription assurance deux roues cyclomoteur 50 scooter et moto</h1>
+            <div role="main" class="ui-content ui-responsive">
+                <h1>Conditions d'acceptation pour la souscription d'une assurance scooter 50 ou moto</h1>
 
-                <a href="http://www.assurance-cyclo-scooter.com/conditions-pour-souscrire-assurance-scooter-50-cc.html" class="ui-btn ui-corner-all" rel="external">Conditions de souscription cyclomoteur scooter 50 cc</a>
-                
-                <a href="http://www.assurance-cyclo-scooter.com/condition-generale-cyclomoteur-scooter-50-cc.pdf" class="ui-btn ui-corner-all" rel="external">Conditions Générales cyclomoteur scooter 50 cc</a>
-                
-                <a href="http://www.assurance-cyclo-scooter.com/conditions-generales-moto-axa.pdf" rel="external" class="ui-btn ui-corner-all">Conditions Générales Moto</a>
-                
-                <a href="http://www.assurance-cyclo-scooter.com/convention-assistance-moto.pdf" rel="external" class="ui-btn ui-corner-all">Convention assistance Moto Europ Assistance</a>
+                <div class="ui-grid-solo ui-responsive">
+                    <div class="ui-block-a">
+                        <a href="http://www.assurance-cyclo-scooter.com/conditions-pour-souscrire-assurance-scooter-50-cc.html" class="ui-btn ui-btn-b ui-corner-all" rel="external">Conditions souscription scooter 50 cc</a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="http://www.assurance-cyclo-scooter.com/condition-generale-cyclomoteur-scooter-50-cc.pdf" class="ui-btn ui-btn-b ui-corner-all" rel="external">Conditions Générales scooter 50 cc</a>
+                    </div>    
+                    <div class="ui-block-a">
+                        <a href="http://www.assurance-cyclo-scooter.com/conditions-generales-moto-axa.pdf" rel="external" class="ui-btn ui-btn-b ui-corner-all">Conditions Générales Moto</a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="http://www.assurance-cyclo-scooter.com/convention-assistance-moto.pdf" rel="external" class="ui-btn ui-btn-b ui-corner-all">Convention assistance Moto Europ Assistance</a>
+                    </div>
+                </div>
             </div><!-- /content -->
 
             <div data-role="footer" data-position="fixed">
@@ -363,7 +370,7 @@
 				<p>Adresse : 2 Rue du Loup, 31620 FRONTON</p>
 				<p>Tél : 05 82 95 21 59</p>
 				<p>Email : contact@assuranceendirect.com</p>                            
-                                <p><a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a></p>
+                                <p>Allez sur notre site <a href="https://www.assurance-cyclo-scooter.com/" rel="external">Assurance Cyclo Scooter</a> pour plus d'informations.</p>
                                     <div data-role="collapsible" data-theme="d" data-content-theme="d" id="map_block">
                                         <h3>Afficher sur la map</h3>
                                         <div id="map" style="width:20em; height:20em"></div>
@@ -481,10 +488,10 @@
 var map;
 function initMap() {
     
-    var myLatLng = {lat: 43.841254, lng: 1.389143};  
+    var myLatLng = {lat: 43.8411059, lng: 1.3890564};  
     map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
-    zoom: 17
+    zoom: 18
   });
   
     var marker = new google.maps.Marker({
