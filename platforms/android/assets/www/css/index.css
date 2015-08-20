@@ -21,7 +21,7 @@ h1 {
 }
 
 .menu-bg {
-    background-color: #000 !important;
+    background-color: #FFFFFF !important;
 }
 
 #linkColor {
@@ -51,28 +51,3 @@ p {
 h2 {
     color: #0860c0;
 }
-
-
-@-webkit-keyframes Fondu7imgInOut{0%, 10%, 100%{opacity:1;}
-14%, 95%{opacity:0;}
-}
-@-moz-keyframes Fondu7imgInOut{0%, 10%, 100%{opacity:1;}
-14%, 95%{opacity:0;}
-}
-@-o-keyframes Fondu7imgInOut{0%, 10%, 100%{opacity:1;}
-14%, 95%{opacity:0;}
-}
-@keyframes Fondu7imgInOut{0%, 10%, 100%{opacity:1;}
-14%, 95%{opacity:0;}
-}
-
-#Fondu7img{position:relative;height:143px;width:149px;text-align:center;}
-#Fondu7img img{position:absolute;left:10em;max-width:149px;height:auto;}
-#Fondu7img img{-webkit-animation-name:Fondu7imgInOut;-webkit-animation-timing-function:ease-in-out;-webkit-animation-iteration-count:infinite;-webkit-animation-duration:21s;animation-name:Fondu7imgInOut;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-duration:21s;}
-#Fondu7img img:nth-of-type(1){-webkit-animation-delay:18s;animation-delay:18s;}
-#Fondu7img img:nth-of-type(2){-webkit-animation-delay:15s;animation-delay:15s;}
-#Fondu7img img:nth-of-type(3){-webkit-animation-delay:12s;animation-delay:12s;}
-#Fondu7img img:nth-of-type(4){-webkit-animation-delay:9s;animation-delay:9s;}
-#Fondu7img img:nth-of-type(5){-webkit-animation-delay:6s;animation-delay:6s;}
-#Fondu7img img:nth-of-type(6){-webkit-animation-delay:3s;animation-delay:3s;}
-#Fondu7img img:nth-of-type(7){-webkit-animation-delay:0s;animation-delay:0s;}

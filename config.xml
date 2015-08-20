@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.adobe.assurance" version="1.0.5">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.adobe.assurance" version="1.0.6">
     <name>AssuranceScooter</name>
     <description>
         An application which provides scooter insurance
@@ -9,6 +9,7 @@
     </author>
 	<icon src="www/img/logoAssuranceScooterMobile.png"/>
 	<preference name="SplashScreen" value="screen"/>
+	<preference name="SplashScreenDelay" value="3000"/>
 	<platform name="android">
     <!-- you can use any density that exists in the Android project -->
 		<splash density="land-hdpi" src="www/img/assurance-cyclo-scooter-hdpi-land.png"/>
