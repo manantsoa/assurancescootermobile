@@ -1,6 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.adobe.assurance" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.adobe.assurance" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <icon density="ldpi" src="www/img/logoAssuranceScooterMobile-ldpi.png" />
+    <icon density="mdpi" src="www/img/logoAssuranceScooterMobile-mdpi.png" />
+    <icon density="hdpi" src="www/img/logoAssuranceScooterMobile-hdpi.png" />
+    <icon density="xhdpi" src="www/img/logoAssuranceScooterMobile-xhdpi.png" />
     <splash density="land-hdpi" src="www/img/assurance-cyclo-scooter-hdpi-land.png" />
     <splash density="land-ldpi" src="www/img/assurance-cyclo-scooter-ldpi-land.png" />
     <splash density="land-mdpi" src="www/img/assurance-cyclo-scooter-mdpi-land.png" />
